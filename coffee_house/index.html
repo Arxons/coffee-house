@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+		/>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Coffee House</title>
+	</head>
+	<body>
+		<header>
+			<div class="header__nav-menu">
+				<a class="nav-menu__logo" href="index.html"></a>
+				<nav class="nav-menu__links">
+					<a class="nav-menu__link favorite-coffee" href="#favorite"
+						>Favorite coffee</a
+					>
+					<a class="nav-menu__link about-us" href="#about">About</a>
+					<a class="nav-menu__link mobile-app" href="#mobile">Mobile app</a>
+					<a class="nav-menu__link contact-us" href="#contacts">Contact us</a>
+				</nav>
+				<div class="nav-menu__coffee-menu">
+					<a class="coffee-menu__btn-menu" href="menu.html">
+						Menu
+						<img
+							class="coffee-menu__img"
+							src="./src/coffee-cup.png"
+							alt="menu"
+						/>
+					</a>
+				</div>
+			</div>
+			<div class="header__background-container">
+				<div class="background-container__main-title">
+					<h1 class="main-title__title">
+						<span class="main-title__title_highlight highlighter">Enjoy</span>
+						premium coffee at our charming cafe
+					</h1>
+					<p class="main-title__paragraph">
+						With its inviting atmosphere and delicious coffee options, the
+						Coffee House Resource is a popular destination for coffee lovers and
+						those seeking a warm and inviting space to enjoy their favorite
+						beverage.
+					</p>
+					<button class="main-title__btn">Menu</button>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="favorite" id="favorite">
+				<div class="favorite__container">
+					<h2 class="favorite__title">
+						Choose your
+						<span class="favorite__title_highlight highlighter">favorite</span>
+						coffee
+					</h2>
+					<div class="favorite__slider">
+						<button class="slider__btn-left slider__btn"></button>
+						<div class="slider__main-slide">
+							<img
+								class="main-slide__img"
+								src="./src/coffee-slider-1.png"
+								alt="coffee"
+							/>
+							<h3 class="main-slide__title">S’mores Frappuccino</h3>
+							<p class="main-slide__descrption">
+								This new drink takes an espresso and mixes it with brown sugar
+								and cinnamon before being topped with oat milk.
+							</p>
+							<p class="main-slide__price">$5.50</p>
+						</div>
+						<button class="slider__btn-right slider__btn"></button>
+					</div>
+					<div class="favorite__slider_controls">
+						<div class="control-line active"></div>
+						<div class="control-line"></div>
+						<div class="control-line"></div>
+					</div>
+				</div>
+			</section>
+			<section class="about" id="about">
+				<div class="about__container">
+					<h3 class="about__title">
+						Resource is
+						<span class="about__title_highlight highlighter"
+							>the perfect and cozy place</span
+						>
+						where you can enjoy a variety of hot beverages, relax, catch up with
+						friends, or get some work done.
+					</h3>
+					<div class="about__gallery">
+						<div class="about__gallery_left-column">
+							<div class="left-column__big-container img-container_big"></div>
+							<div
+								class="left-column__small-container img-container_small"
+							></div>
+						</div>
+						<div class="about__gallery_right-column">
+							<div
+								class="right-column__small-container img-container_small"
+							></div>
+							<div class="right-column__big-container img-container_big"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mobile" id="mobile">
+				<div class="mobile__container">
+					<div class="mobile__offer">
+						<h3 class="mobile__offer_title">
+							<span class="highlighter">Download</span> our apps to start
+							ordering
+						</h3>
+						<p class="mobile__offer_decription">
+							Download the Resource app today and experience the comfort of
+							ordering your favorite coffee from wherever you are
+						</p>
+						<div class="mobile__offer_buttons">
+							<button class="mobile__offer_button btn_app-store">
+								<div class="btn__container">
+									<div class="btn__icon_app-store"></div>
+									<div class="btn__description">
+										<p class="btn__top_title">Available on the</p>
+										<h4 class="btn__bot_title">App Store</h4>
+									</div>
+								</div>
+							</button>
+							<button class="mobile__offer_button btn_google-play">
+								<div class="btn__container">
+									<div class="btn__icon_google"></div>
+									<div class="btn__description">
+										<p class="btn__top_title">Available on</p>
+										<h4 class="btn__bot_title">Google Play</h4>
+									</div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<img
+						class="mobile__img"
+						src="./src/mobile-screens.png"
+						alt="mobile"
+					/>
+				</div>
+			</section>
+		</main>
+		<footer class="contacts" id="contacts">
+			<div class="contacts__container">
+				<div class="contacts__offer">
+					<h3 class="contacts__offer_title">
+						Sip, Savor, Smile.<br />
+						<span class="highlighter-brown">It’s coffee time!</span>
+					</h3>
+					<div class="contacts__socials">
+						<a class="socials__twitter socials__link" href=""></a>
+						<a class="socials__instagram socials__link" href=""></a>
+						<a class="socials__facebook socials__link" href=""></a>
+					</div>
+				</div>
+				<div class="contacts__info">
+					<h3 class="contacts__info_title">Contact us</h3>
+					<ul class="contacts__list">
+						<li class="list__geo list__element">
+							<div class="list__geo_icon list__icon"></div>
+							<div class="list__geo_info list__info">8558 Green Rd., LA</div>
+						</li>
+						<br />
+						<li class="list__number list__element">
+							<div class="list__number_icon list__icon"></div>
+							<div class="list__number_info list__info">+1 (603) 555-0123</div>
+						</li>
+						<br />
+						<li class="list__work-time list__element">
+							<div class="list__work-time_icon list__icon"></div>
+							<div class="list__work-time_info list__info">
+								Mon-Sat: 9:00 AM – 23:00 PM
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
