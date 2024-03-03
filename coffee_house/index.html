@@ -14,27 +14,44 @@
 		<title>Coffee House</title>
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<div class="header__nav-menu">
-				<a class="nav-menu__logo" href="index.html"></a>
-				<nav class="nav-menu__links">
-					<a class="nav-menu__link favorite-coffee" href="#favorite"
-						>Favorite coffee</a
-					>
-					<a class="nav-menu__link about-us" href="#about">About</a>
-					<a class="nav-menu__link mobile-app" href="#mobile">Mobile app</a>
-					<a class="nav-menu__link contact-us" href="#contacts">Contact us</a>
+				<a class="nav-menu__logo logo-mobile" href="index.html"></a>
+				<nav class="nav-menu">
+					<a class="nav-menu__logo logo-desktop" href="index.html"></a>
+					<ul class="nav-menu__list">
+						<li class="nav-menu__item">
+							<a class="nav-menu__link favorite-coffee" href="#favorite"
+								>Favorite coffee</a
+							>
+						</li>
+						<li class="nav-menu__item">
+							<a class="nav-menu__link about-us" href="#about">About</a>
+						</li>
+						<li class="nav-menu__item">
+							<a class="nav-menu__link mobile-app" href="#mobile">Mobile app</a>
+						</li>
+						<li class="nav-menu__item">
+							<a class="nav-menu__link contact-us" href="#contacts"
+								>Contact us</a
+							>
+						</li>
+					</ul>
+					<div class="nav-menu__coffee-menu">
+						<a class="coffee-menu__menu-link" href="menu.html">
+							Menu
+							<img
+								class="coffee-menu__img"
+								src="./src/coffee-cup.png"
+								alt="menu"
+							/>
+						</a>
+					</div>
 				</nav>
-				<div class="nav-menu__coffee-menu">
-					<a class="coffee-menu__btn-menu" href="menu.html">
-						Menu
-						<img
-							class="coffee-menu__img"
-							src="./src/coffee-cup.png"
-							alt="menu"
-						/>
-					</a>
-				</div>
+				<button class="burger-btn">
+					<span class="burger-btn__line"></span
+					><span class="burger-btn__line"></span>
+				</button>
 			</div>
 			<div class="header__background-container">
 				<div class="background-container__main-title">
@@ -48,7 +65,7 @@
 						those seeking a warm and inviting space to enjoy their favorite
 						beverage.
 					</p>
-					<button class="main-title__btn">Menu</button>
+					<a class="main-title__link" href="menu.html">Menu</a>
 				</div>
 			</div>
 		</header>
@@ -186,5 +203,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/main.js"></script>
 	</body>
 </html>

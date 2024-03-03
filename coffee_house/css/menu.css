@@ -97,3 +97,21 @@
 .item_description__price {
 	margin-top: 12px;
 }
+
+@media (max-width: 720px) {
+	.main-menu__container {
+		margin: 20px 16px 0px 16px;
+	}
+
+	.main-menu__title {
+		font-size: 32px;
+	}
+
+	.main-menu__selector {
+		gap: 8px;
+	}
+
+	.main-menu__list {
+		margin: 40px 16px 0px 16px;
+	}
+}
