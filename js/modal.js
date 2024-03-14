@@ -20,6 +20,7 @@ function openModal(event) {
 		if (name == itemName) {
 			const modal = document.querySelector('.main-menu__modal');
 			modal.classList.add('open');
+			document.body.style.overflow = 'hidden';
 
 			createModal(
 				name,
@@ -32,7 +33,10 @@ function openModal(event) {
 			);
 
 			const closeBtn = document.querySelector('.description__close-btn');
-			closeBtn.addEventListener('click', () => modal.classList.remove('open'));
+			closeBtn.addEventListener('click', () => {
+				modal.classList.remove('open');
+				document.body.style.overflow = 'visible';
+			});
 
 			const priceCounter = [0];
 			const sizeTabs = document.querySelectorAll('.modal__tab');

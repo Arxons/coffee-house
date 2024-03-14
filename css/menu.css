@@ -34,12 +34,6 @@
 	transition: 0.2s ease;
 }
 
-.selector__tab:hover,
-.size__tab:hover,
-.additives__tab:hover {
-	background-color: rgb(102, 95, 85);
-	color: rgb(225, 212, 201);
-}
 .selector__tab.active,
 .size__tab.active,
 .additives__tab.active {
@@ -47,12 +41,6 @@
 	color: rgb(225, 212, 201);
 }
 
-.selector__tab:hover .tab_icon,
-.size__tab:hover .tab_icon,
-.additives__tab:hover .tab_icon {
-	background-color: rgb(225, 212, 201);
-	color: rgb(64, 63, 61);
-}
 .selector__tab.active .tab_icon,
 .size__tab.active .tab_icon,
 .additives__tab.active .tab_icon {
@@ -277,5 +265,37 @@
 @media (max-width: 700px) {
 	.modal__box_img {
 		display: none;
+	}
+}
+
+@media (hover: hover) {
+	.selector__tab:hover,
+	.size__tab:hover,
+	.additives__tab:hover {
+		background-color: rgb(102, 95, 85);
+		color: rgb(225, 212, 201);
+	}
+
+	.selector__tab:hover .tab_icon,
+	.size__tab:hover .tab_icon,
+	.additives__tab:hover .tab_icon {
+		background-color: rgb(225, 212, 201);
+		color: rgb(64, 63, 61);
+	}
+}
+
+@media (hover: none) {
+	.selector__tab:active,
+	.size__tab:active,
+	.additives__tab:active {
+		background-color: rgb(102, 95, 85);
+		color: rgb(225, 212, 201);
+	}
+
+	.selector__tab:active .tab_icon,
+	.size__tab:active .tab_icon,
+	.additives__tab:active .tab_icon {
+		background-color: rgb(225, 212, 201);
+		color: rgb(64, 63, 61);
 	}
 }
