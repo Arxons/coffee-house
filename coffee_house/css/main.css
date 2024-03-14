@@ -18,7 +18,7 @@ body {
 	width: 100px;
 	height: 60px;
 	display: flex;
-	background: no-repeat center url(../src/logo.png);
+	background: no-repeat center url(../src/images/logo.png);
 	background-size: contain;
 }
 
@@ -30,6 +30,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 1;
 }
 
 .nav-menu__list {
@@ -103,11 +104,12 @@ body {
 }
 
 .header__background-container {
-	background-image: url(../src/main-title.png);
+	position: relative;
 	margin: 20px 40px 0px 40px;
 	border-radius: 40px;
 	background-size: cover;
 	background-position: center;
+	overflow: hidden;
 }
 
 .background-container__main-title {
@@ -118,6 +120,16 @@ body {
 	padding-top: 100px;
 	margin-left: 100px;
 	padding-bottom: 100px;
+}
+
+.main-title__video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	border-radius: 40px;
+	min-width: 100%;
+	height: 100%;
 }
 
 .main-title__title {
@@ -182,8 +194,14 @@ body {
 }
 
 .slider__main-slide {
+	display: flex;
+	overflow: hidden;
 	text-align: center;
 	width: 480px;
+}
+
+.main-slide__container {
+	transition: 0.2s ease;
 }
 
 .main-slide__img {
@@ -201,15 +219,15 @@ body {
 	align-items: center;
 	justify-content: center;
 	transition: 0.2s ease;
-	background: center no-repeat url(../src/slider-arrow.png);
+	background: center no-repeat url(../src/images/slider-arrow.png);
 }
 
-.slider__btn-left {
+.slider__btn-prev {
 	transform: rotateY(180deg);
 }
 
 .slider__btn:hover {
-	background: center no-repeat url(../src/slider-arrow-light.png)
+	background: center no-repeat url(../src/images/slider-arrow-light.png)
 		rgb(102, 95, 85);
 }
 
@@ -237,14 +255,22 @@ body {
 	margin-top: 40px;
 }
 
-.control-line.active {
-	background-color: rgb(102, 95, 85);
+.pagination-line.active .pagination-progress {
+	width: 100%;
+	transition: 3s;
 }
 
-.control-line {
+.pagination-line {
 	width: 40px;
 	height: 4px;
 	background-color: rgb(193, 182, 173);
+}
+
+.pagination-progress {
+	width: 0%;
+	height: 4px;
+	background-color: rgb(102, 95, 85);
+	transition: 0s;
 }
 
 .about {
@@ -297,16 +323,16 @@ body {
 }
 
 .left-column__big-container {
-	background: no-repeat center url(../src/about-1.jpeg);
+	background: no-repeat center url(../src/images/about-1.jpeg);
 }
 .left-column__small-container {
-	background: no-repeat center url(../src/about-2.jpeg);
+	background: no-repeat center url(../src/images/about-2.jpeg);
 }
 .right-column__big-container {
-	background: no-repeat center url(../src/about-4.jpeg);
+	background: no-repeat center url(../src/images/about-4.jpeg);
 }
 .right-column__small-container {
-	background: no-repeat center url(../src/about-3.jpeg);
+	background: no-repeat center url(../src/images/about-3.jpeg);
 }
 
 .mobile {
@@ -360,11 +386,11 @@ body {
 }
 
 .mobile__offer_button:hover .btn__icon_app-store {
-	background: center no-repeat url(../src/apple-icon-light.png);
+	background: center no-repeat url(../src/images/apple-icon-light.png);
 }
 
 .mobile__offer_button:hover .btn__icon_google {
-	background: center no-repeat url(../src/google-icon-light.png);
+	background: center no-repeat url(../src/images/google-icon-light.png);
 }
 
 .btn__container {
@@ -376,7 +402,7 @@ body {
 .btn__icon_app-store {
 	width: 36px;
 	height: 36px;
-	background: center no-repeat url(../src/apple-icon.png);
+	background: center no-repeat url(../src/images/apple-icon.png);
 }
 
 .btn__description {
@@ -398,7 +424,7 @@ body {
 .btn__icon_google {
 	width: 36px;
 	height: 36px;
-	background: center no-repeat url(../src/google-icon.png);
+	background: center no-repeat url(../src/images/google-icon.png);
 }
 
 .contacts {
@@ -450,27 +476,27 @@ body {
 }
 
 .socials__twitter {
-	background: no-repeat center url(../src/twitter-light.png);
+	background: no-repeat center url(../src/images/twitter-light.png);
 }
 .socials__instagram {
-	background: no-repeat center url(../src/instagram-light.png);
+	background: no-repeat center url(../src/images/instagram-light.png);
 }
 .socials__facebook {
-	background: no-repeat center url(../src/facebook-light.png);
+	background: no-repeat center url(../src/images/facebook-light.png);
 }
 
 .socials__twitter:hover {
-	background: no-repeat center url(../src/twitter-dark.png);
+	background: no-repeat center url(../src/images/twitter-dark.png);
 	border-color: rgb(225, 212, 201);
 	background-color: rgb(225, 212, 201);
 }
 .socials__instagram:hover {
-	background: no-repeat center url(../src/instagram-dark.png);
+	background: no-repeat center url(../src/images/instagram-dark.png);
 	border-color: rgb(225, 212, 201);
 	background-color: rgb(225, 212, 201);
 }
 .socials__facebook:hover {
-	background: no-repeat center url(../src/facebook-dark.png);
+	background: no-repeat center url(../src/images/facebook-dark.png);
 	border-color: rgb(225, 212, 201);
 	background-color: rgb(225, 212, 201);
 }
@@ -511,13 +537,13 @@ body {
 }
 
 .list__geo_icon {
-	background: no-repeat center url(../src/pin-alt.png);
+	background: no-repeat center url(../src/images/pin-alt.png);
 }
 .list__number_icon {
-	background: no-repeat center url(../src/phone.png);
+	background: no-repeat center url(../src/images/phone.png);
 }
 .list__work-time_icon {
-	background: no-repeat center url(../src/clock.png);
+	background: no-repeat center url(../src/images/clock.png);
 }
 
 .list__element {
@@ -540,6 +566,20 @@ body {
 
 .list__element:hover::after {
 	width: 100%;
+}
+
+@media (min-width: 1300px) {
+	.header__background-container {
+		display: flex;
+	}
+
+	.background-container__main-title {
+		position: absolute;
+	}
+
+	.main-title__video {
+		position: static;
+	}
 }
 
 @media (max-width: 1250px) {
@@ -696,6 +736,7 @@ body {
 		justify-content: center;
 	}
 
+	.slider__main-slide,
 	.main-slide__img {
 		width: 348px;
 	}

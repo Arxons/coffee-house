@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -42,7 +42,7 @@
 							Menu
 							<img
 								class="coffee-menu__img"
-								src="./src/coffee-cup.png"
+								src="./src/images/coffee-cup.png"
 								alt="menu"
 							/>
 						</a>
@@ -67,6 +67,9 @@
 					</p>
 					<a class="main-title__link" href="menu.html">Menu</a>
 				</div>
+				<video autoplay muted loop class="main-title__video">
+					<source src="./src/enjoy-video.mp4" type="video/mp4" />
+				</video>
 			</div>
 		</header>
 		<main>
@@ -78,27 +81,11 @@
 						coffee
 					</h2>
 					<div class="favorite__slider">
-						<button class="slider__btn-left slider__btn"></button>
-						<div class="slider__main-slide">
-							<img
-								class="main-slide__img"
-								src="./src/coffee-slider-1.png"
-								alt="coffee"
-							/>
-							<h3 class="main-slide__title">S’mores Frappuccino</h3>
-							<p class="main-slide__descrption">
-								This new drink takes an espresso and mixes it with brown sugar
-								and cinnamon before being topped with oat milk.
-							</p>
-							<p class="main-slide__price">$5.50</p>
-						</div>
-						<button class="slider__btn-right slider__btn"></button>
+						<button class="slider__btn-prev slider__btn"></button>
+						<div class="slider__main-slide"></div>
+						<button class="slider__btn-next slider__btn"></button>
 					</div>
-					<div class="favorite__slider_controls">
-						<div class="control-line active"></div>
-						<div class="control-line"></div>
-						<div class="control-line"></div>
-					</div>
+					<div class="favorite__slider_controls"></div>
 				</div>
 			</section>
 			<section class="about" id="about">
@@ -161,7 +148,7 @@
 					</div>
 					<img
 						class="mobile__img"
-						src="./src/mobile-screens.png"
+						src="./src/images/mobile-screens.png"
 						alt="mobile"
 					/>
 				</div>
@@ -203,6 +190,7 @@
 				</div>
 			</div>
 		</footer>
-		<script src="./js/main.js"></script>
+		<script src="./js/burgerMenu.js"></script>
+		<script type="module" src="./js/slider.js"></script>
 	</body>
 </html>

@@ -49,7 +49,7 @@
 							Menu
 							<img
 								class="coffee-menu__img"
-								src="./src/coffee-cup.png"
+								src="./src/images/coffee-cup.png"
 								alt="menu"
 							/>
 						</a>
@@ -69,7 +69,7 @@
 						<span class="highlighter">amazing surprise</span>
 					</h1>
 					<div class="main-menu__selector">
-						<button class="selector__tab coffee">
+						<button class="selector__tab coffee active">
 							<div class="tab_icon"><span class="tab_icon-emoji">☕</span></div>
 							<div class="tab_name">Coffee</div>
 						</button>
@@ -83,127 +83,11 @@
 						</button>
 					</div>
 				</div>
-				<div class="main-menu__list">
-					<div class="list__item">
-						<img
-							class="list__item_img"
-							src="./src/coffee-1.jpeg"
-							alt="coffee"
-						/>
-						<div class="list__item_description">
-							<p class="item_description__title">Irish coffee</p>
-							<p class="item_description__about">
-								Fragrant black coffee with Jameson Irish whiskey and whipped
-								milk
-							</p>
-							<p class="item_description__price">$7.00</p>
-						</div>
-					</div>
-					<div class="list__item">
-						<img
-							class="list__item_img"
-							src="./src/coffee-1.jpeg"
-							alt="coffee"
-						/>
-						<div class="list__item_description">
-							<p class="item_description__title">Irish coffee</p>
-							<p class="item_description__about">
-								Fragrant black coffee with Jameson Irish whiskey and whipped
-								milk
-							</p>
-							<p class="item_description__price">$7.00</p>
-						</div>
-					</div>
-					<div class="list__item">
-						<img
-							class="list__item_img"
-							src="./src/coffee-1.jpeg"
-							alt="coffee"
-						/>
-						<div class="list__item_description">
-							<p class="item_description__title">Irish coffee</p>
-							<p class="item_description__about">
-								Fragrant black coffee with Jameson Irish whiskey and whipped
-								milk
-							</p>
-							<p class="item_description__price">$7.00</p>
-						</div>
-					</div>
-					<div class="list__item">
-						<img
-							class="list__item_img"
-							src="./src/coffee-1.jpeg"
-							alt="coffee"
-						/>
-						<div class="list__item_description">
-							<p class="item_description__title">Irish coffee</p>
-							<p class="item_description__about">
-								Fragrant black coffee with Jameson Irish whiskey and whipped
-								milk
-							</p>
-							<p class="item_description__price">$7.00</p>
-						</div>
-					</div>
-					<div class="list__item">
-						<img
-							class="list__item_img"
-							src="./src/coffee-1.jpeg"
-							alt="coffee"
-						/>
-						<div class="list__item_description">
-							<p class="item_description__title">Irish coffee</p>
-							<p class="item_description__about">
-								Fragrant black coffee with Jameson Irish whiskey and whipped
-								milk
-							</p>
-							<p class="item_description__price">$7.00</p>
-						</div>
-					</div>
-					<div class="list__item">
-						<img
-							class="list__item_img"
-							src="./src/coffee-1.jpeg"
-							alt="coffee"
-						/>
-						<div class="list__item_description">
-							<p class="item_description__title">Irish coffee</p>
-							<p class="item_description__about">
-								Fragrant black coffee with Jameson Irish whiskey and whipped
-								milk
-							</p>
-							<p class="item_description__price">$7.00</p>
-						</div>
-					</div>
-					<div class="list__item">
-						<img
-							class="list__item_img"
-							src="./src/coffee-1.jpeg"
-							alt="coffee"
-						/>
-						<div class="list__item_description">
-							<p class="item_description__title">Irish coffee</p>
-							<p class="item_description__about">
-								Fragrant black coffee with Jameson Irish whiskey and whipped
-								milk
-							</p>
-							<p class="item_description__price">$7.00</p>
-						</div>
-					</div>
-					<div class="list__item">
-						<img
-							class="list__item_img"
-							src="./src/coffee-1.jpeg"
-							alt="coffee"
-						/>
-						<div class="list__item_description">
-							<p class="item_description__title">Irish coffee</p>
-							<p class="item_description__about">
-								Fragrant black coffee with Jameson Irish whiskey and whipped
-								milk
-							</p>
-							<p class="item_description__price">$7.00</p>
-						</div>
-					</div>
+
+				<div class="main-menu__list"></div>
+				<button class="main-menu_update-btn"></button>
+				<div class="main-menu__modal">
+					<div class="modal__box"></div>
 				</div>
 			</section>
 		</main>
@@ -243,6 +127,8 @@
 				</div>
 			</div>
 		</footer>
-		<script src="./js/main.js"></script>
+		<script src="./js/burgerMenu.js"></script>
+		<script type="module" src="./js/menu.js"></script>
+		<script type="module" src="./js/modal.js"></script>
 	</body>
 </html>
